@@ -1,0 +1,15 @@
+.logo {
+    width: 13%;
+    margin-left: 10px;
+}
+
+.grid-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    ion-input {
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+}

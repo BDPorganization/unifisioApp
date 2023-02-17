@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-img class="logo" src="../../assets/images/unifisio_logo.png"></ion-img>
+    <ion-title>Chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content padding>
+    <ion-grid> 
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+          <ion-card style="height: 200px;">
+            <ion-img src="../../assets/images/userProfile.jpg" style="height: 200px;"></ion-img>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-grid class="grid-bottom"> 
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+          <ion-card>
+            <ion-input></ion-input>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
 </ion-content>

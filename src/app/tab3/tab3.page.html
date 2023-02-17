@@ -19,7 +19,7 @@
         <ion-input placeholder="000.000.000-00" [readonly]="true"></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">E-mail</ion-label>
+        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">Email</ion-label>
         <ion-input placeholder="test@test.com" [readonly]="true"></ion-input>
       </ion-item>
       <ion-item lines="none">
@@ -31,7 +31,7 @@
     <ion-grid> 
       <ion-row class="ion-align-items-center">
         <ion-col size="12" class="ion-text-center">
-          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger">Alterar Senha</ion-button>
+          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger" (click)="alterarDados()">Alterar Dados</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -39,7 +39,7 @@
     <ion-grid>
       <ion-row class="ion-align-items-center">
         <ion-col size="12" class="ion-text-center">
-          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger">Alterar Imagem</ion-button>
+          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger" (click)="alterarSenha()">Alterar Senha</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
