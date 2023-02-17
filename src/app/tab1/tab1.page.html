@@ -1,0 +1,154 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img class="logo" src="../../assets/images/unifisio_logo.png"></ion-img>
+    <ion-title>Home</ion-title>
+      <!-- <ion-avatar slot="end">
+        <ion-img src="../../assets/images/userProfile.jpg" style="margin-right: 10px;"></ion-img>
+      </ion-avatar> -->
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-img src="../../assets/images/unifisio.png"></ion-img>
+
+    <ion-card-content class="ion-text-center">
+      <p style="font-size: 16px;">
+        Coworking consiste no aluguel de salas feito a partir da sua necessidade. 
+        Assim, é possível alugar salas organizadas, limpas e equipadas por algumas horas 
+        e principalmente, por um valor que cabe no seu bolso.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button style="width: 40%; font-size: 18px;" fill="outline" shape="round" color="primary" (click)="setOpen(true)">Ver salas</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Salas</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">X</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+      
+        <ion-card>
+          <ion-img src="../../assets/images/img1.jpg"></ion-img>
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="6" class="ion-text-center">
+                <ion-card-title>
+                  <h5>Consultório 1</h5>
+                </ion-card-title>
+              </ion-col>
+              <ion-col size="6" class="ion-text-end">
+                <ion-button href="https://codeovershadow-port.netlify.app/" fill="solid" color="success">
+                  <ion-icon name="pricetag-outline"></ion-icon>
+                  Alugar
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-content>
+            <ion-list>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="snow-outline"></ion-icon> Ambiente Climatizado
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="clipboard-outline"></ion-icon> Equipamentos inclusos
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="clipboard-outline"></ion-icon> Equipamentos inclusos
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      
+        <ion-card>
+          <ion-img src="../../assets/images/img2.jpg"></ion-img>
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="6" class="ion-text-center">
+                <ion-card-title>
+                  <h5>Consultório 2</h5>
+                </ion-card-title>
+              </ion-col>
+              <ion-col size="6" class="ion-text-end">
+                <ion-button href="https://codeovershadow-port.netlify.app/" fill="solid" color="success">
+                  <ion-icon name="pricetag-outline"></ion-icon>
+                  Alugar
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-content>
+            <ion-list>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="snow-outline"></ion-icon> Ambiente Climatizado
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="clipboard-outline"></ion-icon> Equipamentos inclusos
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      
+        <ion-card>
+          <ion-img src="../../assets/images/img3.jpg"></ion-img>
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="6" class="ion-text-center">
+                <ion-card-title>
+                  <h5>Studio de pilates</h5>
+                </ion-card-title>
+              </ion-col>
+              <ion-col size="6" class="ion-text-end">
+                <ion-button href="https://codeovershadow-port.netlify.app/" fill="solid" color="success">
+                  <ion-icon name="pricetag-outline"></ion-icon>
+                  Alugar
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-card-content>
+            <ion-list>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="snow-outline"></ion-icon> Ambiente Climatizado
+                </ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon slot="start" name="clipboard-outline"></ion-icon> Equipamentos inclusos
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>

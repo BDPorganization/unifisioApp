@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img class="logo" src="../../assets/images/unifisio_logo.png"></ion-img>
+    <ion-title>Perfil</ion-title>
+      <!-- <ion-avatar slot="end">
+        <ion-img src="../../assets/images/userProfile.jpg" style="margin-right: 10px;"></ion-img>
+      </ion-avatar> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col size="4" offset="4">
+        <ion-img src="../../assets/images/userProfile.jpg" style="border-radius: 20px!important;"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <ion-card>
+    <ion-list [inset]="true">
+      <ion-card-title class="ion-text-center" style="font-size: 18px; color: #f05e22;">Dados Pessoais</ion-card-title>
+      <ion-item lines="none">
+        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">Nome</ion-label>
+        <ion-input placeholder="Bruno Duarte" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">CPF</ion-label>
+        <ion-input placeholder="000.000.000-00" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">Email</ion-label>
+        <ion-input placeholder="test@test.com" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label style="font-size: 18px; color: #f05e22;" position="stacked">Data de nascimento</ion-label>
+        <ion-input placeholder="dd/mm/aaaa" [readonly]="true"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-grid> 
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger">Alterar Senha</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+          <ion-button style="width: 100%; font-size: 18px;" expand="full" shape="round" color="danger">Alterar Imagem</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  
+</ion-content> 
